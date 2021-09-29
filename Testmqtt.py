@@ -3,7 +3,7 @@ import paho.mqtt.client as mqtt
 def conectado(client, userdata, flags, rc):
     print("Connected with result code "+str(rc))
 
-    client.publish("altairlbn2020@gmail.com/t1")
+    client.publish("altairlbn2020@gmail.com/t2")
 
 def nuevoMensaje(client, userdata, msg):
     print(msg.topic+" "+str(msg.payload))
