@@ -1,2 +1,2 @@
 alert('hola')
-document.getElementById('sensor').innerHTML='mishu'
+document.getElementById('sensor').innerHTML='trabembe'
