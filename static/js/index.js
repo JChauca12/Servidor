@@ -5,7 +5,7 @@ function LED1_On() {
 	console.log("led on");
 	//document.getElementById("sensor").innerHTML="led on";
 	message = new Paho.MQTT.Message("ON");
-    	message.destinationName = "altairlbn2020@gmail.com/t2";
+    	message.destinationName = "bryan.chimborazo@unach.edu.ec/Topico2";
     	client.send(message);
   
 }
@@ -13,7 +13,7 @@ function LED1_Off(){
 	//alert("led off");
 	console.log("led off");
 	message = new Paho.MQTT.Message("OFF");
-    	message.destinationName = "altairlbn2020@gmail.com/t2";
+    	message.destinationName = "bryan.chimborazo@unach.edu.ec/Topico2";
     	client.send(message);
 	//document.getElementById("sensor").innerHTML="led off";
 }
@@ -32,8 +32,8 @@ function LED1_Off(){
   client.onMessageArrived = onMessageArrived;
   var options = {
    useSSL: false,
-    userName: "altairlbn2020@gmail.com",
-    password: "Onepiece746",
+    userName: "bryan.chimborazo@unach.edu.ec",
+    password: "miryanLEOVINA1",
     onSuccess:onConnect,
     onFailure:doFail
   }
@@ -46,9 +46,9 @@ function LED1_Off(){
     // Once a connection has been made, make a subscription and send a message.
     console.log("Conectado...");
 	
-    client.subscribe("altairlbn2020@gmail.com/t1");
+    client.subscribe("bryan.chimborazo@unach.edu.ec/Topico2");
     message = new Paho.MQTT.Message("hola desde la web");
-    message.destinationName = "altairlbn2020@gmail.com/t1";
+    message.destinationName = "bryan.chimborazo@unach.edu.ec/Topico2";
     client.send(message);
 	
   }
