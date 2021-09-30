@@ -69,9 +69,9 @@ function LED1_Off(){
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
 	  var hola = message.payloadString.split(“-”);
-	  document.getElementById("sensor").innerHTML=hola[0];
-	  document.getElementById("sensor1").innerHTML=hola[1];
+	 // document.getElementById("sensor").innerHTML=hola[0];
+	 // document.getElementById("sensor1").innerHTML=hola[1];
 	  
-	//document.getElementById("sensor").innerHTML=message.payloadString;
+	document.getElementById("sensor").innerHTML=message.payloadString;
   }
 
