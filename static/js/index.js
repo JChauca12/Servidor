@@ -68,7 +68,7 @@ function LED1_Off(){
   // called when a message arrives
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
-	  var hola = message.payloadString.split(“-”);
+	 // var hola = message.payloadString.split(“-”);
 	 // document.getElementById("sensor").innerHTML=hola[0];
 	 // document.getElementById("sensor1").innerHTML=hola[1];
 	  
